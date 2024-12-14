@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Freeman - Portfolio</title>
+    <link rel="icon" href="images/r.png">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/gradientstyles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="gradient"></div>
+    <div class="cursor"></div>
+
+    <header>
+        <nav>
+            <a href="#" class="logo"><span>Ryan Freeman</span></a>
+            <ul class="links">
+                <li>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+            </li>
+            </ul>
+
+            <i class="bx bx-menu-alt-right" id="menu"></i>
+
+            <a href="#contact" class="btn">Contact Me</a>
+
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="Images/headshot.jpg" alt="">
+
+        <div class="infoBox">
+            <h1><span>Hello, I'm Ryan</span></h1>
+            <h3><span>IT Student,</span> Based in the United States</h3>
+            <p>
+                I am pursuing an associate's degree in Software Development and currently possess 7-8 years of technical experience.
+                Skilled in programming, management, and customer service, I am passionate about music, gaming, and continuously refining my expertise in fast-paced environments both in person and virtually.
+            </p>
+        </div>
+
+        <div class="btnBox">
+            <a href="#contact" class="btn">Hire</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="aboutBox">
+            <div class="aboutInfo">
+
+                <h1><span>About Me</span></h1>
+                <img src="Images/about.jpg" alt="">
+                <p>I am currently pursuing an associate's degree in Software Development and have developed a diverse skill set over the years.
+                    With 7-8 years of experience in building and troubleshooting computers and software, I possess a strong foundation in technical support, desktop support, and software troubleshooting. My programming skills include proficiency in HTML, CSS, JavaScript, and Python, which I continue to improve during my time at Mid-State.
+                </p>
+
+                <p>Throughout my short stint as an adult so far, I have honed my management and customer service skills, with two years of management experience in both remote and in-person settings. As a Front End Team Lead at Walmart, I successfully managed a team of over 35 personnel, ensuring efficient workflow and exceptional customer service.
+                    My role involved performing daily back-end accounting tasks and coordinating schedules and breaks to optimize productivity.
+                </p>
+
+                <p>In my previous positions at Walmart, I developed strong customer service skills, often being the first point of contact for customers.
+                    As a Cap 1 Associate, I was responsible for ensuring top stock was efficiently organized and assisting with truck unloads.
+                    My experience as a Deli/Bakery Associate required proficiency in time management and the ability to adapt quickly to various tasks, demonstrating my flexibility in fast-paced environments.
+                </p>
+
+                <p>With a strong work ethic and a commitment to continuous learning, I am dedicated to leveraging my skills in software development and technical support to make a positive impact in my future endeavors.
+                    I have a solid understanding of Microsoft 365 and a variety of operating systems, including Windows and Linux. I thrive in fast-paced environments and am always eager to take on new challenges.</p>
+
+                <p>If I'm not working on a school project, or personal one, I am often times writing music or playing games. I have a huge passion for music, and have been playing guitar for 8 years and counting. Through those 8 years I have picked up enough audio engineering tips and tricks to
+                    record my own music from scratch as a one man band. Thank god for the internet. I also have a passion for games. Specifically RPGs, FPS games, etc. Lately, I've been donating my sanity to Rainbow Six Siege, and I'm not sure if I'll ever get it back.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="header"><span>Projects</span></h1>
+
+        <h3 class="sideNote"><span>All of these projects are a work in progress. Things will change, and more projects will be added as time goes on.</span></h3>
+
+        <div class="projectsContainer">
+            <a href="https://github.com/RyanMFreeman/PasswordManager?tab=readme-ov-file" target="_blank"><div class="box">
+                <h1><span>Simple Password Manager</span></h1>
+                <p>I created a simple password manager using Python, and some simple modules like cryptography, and CustomTkinter. It tracks your username, password, and the app/site it belongs to. Then it stores all of that info into an encrypted .json file that is created after running the app.</p>
+                <img src="Images/pwmgr.png" alt="">
+            </div></a>
+
+            <a href="https://github.com/RyanMFreeman/PasswordManager/releases/tag/PasswordMgrAPK"><div class="box">
+                <h1><span>Password Manager - Android Port</span></h1>
+                <p>APK version of the desktop password manager I created. Same principal applies, everything gets encrypted, and stored locally.
+                    For the port I utilized Kivy and buildozer in order to get things running.</p>
+                <img src="Images/pwandroid1.jpg" alt="">
+            </div></a>
+
+            <a href="https://tailblogtest-b7c37ddcb6a2.herokuapp.com/posts.html"><div class="box">
+                <h1><span>Tailwind Demo</span></h1>
+                <p>Testing grounds for tailwind/node.js functionality - DB hosted w/ MongoDB Atlas
+                    Mainly used for my own personal testing of tailwind, and node.js functionality.
+                    The site has a working blog functionality that creates posts and stores them in the database.
+                </p>
+                <img src="Images/tailblog.png" alt="">
+            </div></a>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <h1><span>Ryan Freeman - Resume</span></h1>
+        <button class="btn" onclick="printResume()" type="button">Print Resume</button>
+
+        <div class="resumeContent">
+            <div class="resumeTopRow">
+                <div class="education">
+                    <h2><span>Education</span></h2>
+                    <p><strong>Associate's Degree in IT - Software Development</strong> <br>
+                    Mid-State Technical College - Expected Graduation: May 2026</p>
+                    <p><strong>High School Diploma</strong> <br>
+                    Wisconsin Virtual Academy - Graduated: 2020</p>
+                </div>
+
+                <div class="workExperience">
+                    <h2><span>Work Experience</span></h2>
+                    <p><strong>Front End Team Lead</strong><br>
+                    Walmart, Antigo, WI - June 2023 to April 2024<br>
+                    Managed a team of 35+ personnel, handled back-end accounting tasks, and provided customer service. Coordinated schedules and ensured efficient workflow.</p>
+                    <p><strong>Cap 1 Associate</strong><br>
+                    Walmart, Antigo, WI - June 2022 to June 2023<br>
+                    Organized top stock, assisted with truck unloads, and worked palletized freight while serving as a primary point of contact for customers.</p>
+                    <p><strong>Deli/Bakery Associate</strong><br>
+                    Walmart, Antigo, WI - February 2022 to June 2022<br>
+                    Provided customer service, managed time effectively, and adapted quickly to various tasks in a fast-paced environment.</p>
+                    <p><strong>Set-up/Service Technician</strong><br>
+                    Fuller Sales &amp; Service, Antigo, WI - April 2021 to February 2022<br>
+                    Performed fast-paced repairs and new unit setups, with a focus on problem-solving and quick decision-making.</p>
+                </div>
+            </div>
+            <div class="skills">
+                <h2><span>Skills</span></h2>
+                <p><strong>Programming Languages</strong> <br>
+                 HTML, CSS, JavaScript, Python, C#</p>
+                <p><strong>Operating System Proficiencies</strong> <br>
+                Windows, Linux, MacOS</p>
+                <p><strong>Software Proficiencies</strong> <br>
+                Microsoft 365, Adobe Creative Suite, Visual Studio Code, PyCharm</p>
+                <p><strong>Personal Skills</strong> <br>
+                Strong work ethic, commitment to continuous learning, time management, customer service, technical support, troubleshooting, management, adaptability, flexibility, team leadership, workflow coordination, back-end accounting, scheduling, inventory management</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h1 class="header"><span>Contact</span></h1>
+
+        <form id="contactForm" method="POST">
+            <div class="inputBox">
+                <span>Full Name</span>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter Your Full Name" required>
+                <div class="error-message" id="nameError">Please enter your full name.</div>
+            </div>
+
+            <div class="inputBox">
+                <span>Your Email</span>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                <div class="error-message" id="emailError">Please enter a valid email address.</div>
+            </div>
+
+            <div class="inputBox">
+                <span>Your Company</span>
+                <input type="text" id="company" name="company" placeholder="Enter Your Company" required>
+                <div class="error-message" id="companyError">Please enter your company name.</div>
+            </div>
+
+            <div class="inputBox">
+                <span>What qualities do you look for in candidates?</span>
+                <textarea id="qualities" name="qualities" placeholder="Enter your answer" required></textarea>
+                <div class="error-message" id="qualitiesError">This field is required.</div>
+
+            <div class="inputBox">
+                <span>Which technologies are most important for this role?</span>
+                <textarea id="technologies" name="technologies" placeholder="Enter your answer" required></textarea>
+                <div class="error-message" id="technologiesError">This field is required.</div>
+            </div>
+
+            <div class="inputBox">
+                <span>How did you hear about me?</span>
+                <input type="text" id="referral" name="referral" placeholder="Enter source of referral" required>
+                <div class="error-message" id="referralError">This field is required.</div>
+            </div>
+
+            <div class="inputBox">
+                <span>Your Message</span>
+                <textarea id="message" name="message" placeholder="Enter Your Message" required></textarea>
+                <div class="error-message" id="messageError">Please enter your message.</div>
+            </div>
+
+
+                <button class="submit" type="submit">Submit</button>
+
+            </div>
+        </form>
+    </section>
+
+
+
+    <footer>
+
+        <div class="colLeft">
+            <div class="colBox">
+                <span><i class="bx bx-current-location" ></i></span>
+                <span>Wisconsin, United States</span>
+            </div>
+
+            <div class="colBox">
+                <span><i class="bx bxs-envelope" ></i></span>
+                <span>gonnamakeanewemailtoputhere@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="colRight">
+            <span>My Socials </span>
+
+            <div class="socialIcons">
+
+
+                <span><a href="https://github.com/RyanMFreeman" target="_blank" aria-label="Go to example"><i class="bx bxl-github" ></i></a></span>
+
+                <span><a href="https://www.linkedin.com/in/ryanfreeman2003/" target="_blank" aria-label="Go to example"><i class="bx bxl-linkedin" ></i></a></span>
+
+                <span><a href="https://www.tiktok.com/@ryanmfreeman" target="_blank" aria-label="Go to example"><i class="bx bxl-tiktok"></i></a></span>
+
+                <span><a href="https://www.instagram.com/ryanm.freeman/" target="_blank" aria-label="Go to example"><i class="bx bxl-instagram" ></i></a></span>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
