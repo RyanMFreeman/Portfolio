@@ -660,6 +660,10 @@ footer {
         font-size: 1em;
     }
 
+    footer .colRight {
+        font-size: 1.3em;
+    }
+
 }
 
 @media(max-width:768px){
@@ -707,6 +711,10 @@ footer {
         gap: 5em;
         align-items: baseline;
     }
+
+    footer .colBox {
+        font-size: 0.9em;
+    }
     
     #resume h1 {
         font-size: 2em;
@@ -736,6 +744,142 @@ footer {
     }
 }
 
+
+@media(max-width: 498px) {
+    section {
+        padding: 4em 10%; 
+        overflow-x: hidden;
+    }
+
+    #home h1 {
+        font-size: 2em;
+    }
+
+    #home h3 {
+        font-size: 1.2em;
+    }
+
+    #home img {
+        width: 45vw; 
+    }
+
+    #about img {
+        width: 50vw; 
+    }
+
+    #resume {
+        padding: 5% 10%;
+    }
+
+    #resume h1 {
+        font-size: 1.8em;
+    }
+
+    .resumeTopRow {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .resumeTopRow .education,
+    .resumeTopRow .workExperience {
+        width: 100%;
+    }
+
+    #resume .skills {
+        padding: 1em 2em;
+        gap: 1.5em;
+    }
+
+    #resume .skills h2 {
+        font-size: 1.6em;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 3em; 
+        align-items: center; 
+    }
+
+    footer p {
+        font-size: 1em; 
+    }
+
+    footer .colBox {
+        font-size: 0.8em; 
+    }
+
+    .inputBox input {
+        padding: 0.4em 0.8em;
+    }
+}
+
+@media(max-width: 368px) {
+    section {
+        padding: 3em 8%; 
+        overflow-x: hidden;
+    }
+
+    #home h1 {
+        font-size: 1.8em;
+    }
+
+    #home h3 {
+        font-size: 1.2em;
+    }
+
+    #home img {
+        width: 50vw; 
+    }
+
+    #about img {
+        width: 55vw; 
+    }
+
+    #resume {
+        padding: 4% 8%; 
+    }
+
+    #resume h1 {
+        font-size: 1.6em; 
+    }
+
+    .resumeTopRow {
+        flex-direction: column;
+        gap: 1.5em; 
+    }
+
+    .resumeTopRow .education,
+    .resumeTopRow .workExperience {
+        width: 100%;
+    }
+
+    #resume .skills {
+        padding: 1em 1.5em;
+        gap: 1.2em; 
+    }
+
+    #resume .skills h2 {
+        font-size: 1.4em; 
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 2em; 
+        align-items: center; 
+    }
+
+    footer p {
+        font-size: 0.9em; 
+    }
+
+    footer .colBox {
+        font-size: 0.6em; 
+    }
+
+    .inputBox input {
+        padding: 0.4em 0.5em; 
+    }
+}
 
 @media print {
     body {
